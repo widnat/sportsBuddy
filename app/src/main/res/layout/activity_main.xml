@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/newUserZipCodeInput"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="68dp"
+        android:hint="Zip Code"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserCountryInput" />
+
+    <EditText
+        android:id="@+id/newUserCountryInput"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="68dp"
+        android:hint="Country"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserStateInput" />
+
+    <EditText
+        android:id="@+id/newUserStateInput"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="68dp"
+        android:hint="State"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserCityInput" />
+
+    <EditText
+        android:id="@+id/newUserCityInput"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="68dp"
+        android:hint="City"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserLastNameInput" />
+
+    <EditText
+        android:id="@+id/newUserUserIDInput"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:hint="userID"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserText" />
+
+    <EditText
+        android:id="@+id/newUserLastNameInput"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="68dp"
+        android:hint="Last Name"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserFirstNameInput" />
+
+    <EditText
+        android:id="@+id/newUserFirstNameInput"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="68dp"
+        android:hint="First Name"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserUserIDInput" />
+
+    <EditText
+        android:id="@+id/loginUserIDInput"
+        android:layout_width="247dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:ems="10"
+        android:hint="userID"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="256dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Already a member? Please enter your userID"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newUserText"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="15dp"
+        android:text="Are you a new user? Please enter your information below"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="5dp"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginUserIDInput" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="5dp"
+        android:text="Sign Up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserZipCodeInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
